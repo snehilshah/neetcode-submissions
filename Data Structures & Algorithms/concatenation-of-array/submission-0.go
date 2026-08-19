@@ -1,0 +1,10 @@
+func getConcatenation(nums []int) []int {
+	cat := make([]int, 0, len(nums))
+    for _, v := range nums{
+		cat = append(cat, v)
+	}
+    for _, v := range nums{
+		cat = append(cat, v)
+	}
+	return cat
+}
